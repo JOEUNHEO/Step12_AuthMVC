@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="Step12_AuthMVC">
+    <wb-module deploy-name="Step13_AuthMVC">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="Step12_AuthMVC"/>
-        <property name="java-output-path" value="/Step12_AuthMVC/build/classes"/>
+        <property name="java-output-path" value="/Step13_AuthMVC/build/classes"/>
+        <property name="context-root" value="Step13_AuthMVC"/>
     </wb-module>
 </project-modules>
