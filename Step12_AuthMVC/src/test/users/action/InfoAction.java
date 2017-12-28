@@ -7,7 +7,9 @@ import test.controller.Action;
 import test.controller.ActionForward;
 import test.users.dao.UsersDao;
 import test.users.dto.UsersDto;
-
+/*
+ * 	사용자 정보를 출력해 주는 Action 
+ */
 public class InfoAction extends Action{
 	@Override
 	public ActionForward execute(HttpServletRequest request, HttpServletResponse response) {

@@ -10,11 +10,9 @@
 </head>
 <body>
 <%
-	//1. 세션에 저장된 id 을 읽어온다.
-	String id = (String)session.getAttribute("id");
-	//2. 세션에 저장된 dto 해 온다.
+	// request 에 담긴 사용자 정보 얻어오기
 	UsersDto dto = (UsersDto)request.getAttribute("dto");
-	//3. 응답한다.
+	
 %>
 <table>
 	<thead>
@@ -26,7 +24,7 @@
 	<tbody>
 		<tr>
 			<th>아이디</th>
-			<td><%=id %></td>
+			<td><%=dto.getId() %></td>
 		</tr>
 		<tr>
 			<th>이메일</th>

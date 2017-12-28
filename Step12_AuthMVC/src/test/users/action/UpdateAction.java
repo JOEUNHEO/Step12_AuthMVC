@@ -24,18 +24,8 @@ public class UpdateAction extends Action{
 		//2. DB 에 있는 회원 정보를 수정한다.
 		boolean isSuccess = UsersDao.getInstance().update(dto);
 		
-		if(isSuccess) {// 수정에 성공하면,
-			request.setAttribute("msg", "회원 정보가 수정되었습니다.");
-		}else {// 수정에 실패하면,
-			request.setAttribute("msg", "회원 정보 수정에 실패했습니다.");
-		}
-		
-		// url 을 request 에 담는다.
-		String cPath = request.getContextPath();
-		
-		request.setAttribute("url", cPath+"/users/private/info.do");
-		//3. forward 한다.
-		return new ActionForward("/views/users/private/alert.jsp");
+		// 개인 정보 보기로 리다일렉트 시키기
+		return new ActionForward("/users/private/info.do", true);
 	}
 
 }

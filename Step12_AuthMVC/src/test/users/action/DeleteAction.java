@@ -19,11 +19,11 @@ public class DeleteAction extends Action{
 		boolean isSuccess = UsersDao.getInstance().delete(id);
 		
 		if(isSuccess) {// 삭제에 성공하면,
-			request.setAttribute("msg", "회원 정보가 삭제되었습니다.");
+			request.setAttribute("msg", id+"회원님 탈퇴 처리 되었습니다.");
 			session.invalidate(); // session 에 담긴 모든 정보를 없앤다.
 			
 		}else {// 삭제에 실패하면,
-			request.setAttribute("msg", "회원 정보 삭제에 실패했습니다.");
+			request.setAttribute("msg", id+"회원님 탈퇴 처리에 실패했습니다.");
 		}
 		
 		// url 을 request 에 담는다.
